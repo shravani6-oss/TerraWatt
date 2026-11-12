@@ -1,0 +1,13 @@
+Folds,CV strategy,Model,Mean F1,Std F1
+5,Grouped stratified (honest),Decision Tree,0.8139,0.0522
+5,Grouped stratified (honest),Bagging,0.8386,0.0198
+5,Grouped stratified (honest),Random Forest,0.8602,0.0209
+5,Plain stratified (optimistic),Decision Tree,0.9732,0.0049
+5,Plain stratified (optimistic),Bagging,0.9829,0.0034
+5,Plain stratified (optimistic),Random Forest,0.9862,0.0037
+10,Grouped stratified (honest),Decision Tree,0.8151,0.0753
+10,Grouped stratified (honest),Bagging,0.8441,0.0605
+10,Grouped stratified (honest),Random Forest,0.8423,0.1008
+10,Plain stratified (optimistic),Decision Tree,0.9732,0.0075
+10,Plain stratified (optimistic),Bagging,0.9837,0.007
+10,Plain stratified (optimistic),Random Forest,0.9837,0.006

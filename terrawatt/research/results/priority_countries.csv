@@ -1,0 +1,11 @@
+country,renewable_share,electricity_access,clean_cooking_access,gdp_per_capita,energy_per_capita_kwh,low_carbon_elec_pct,energy_intensity,priority_score,cluster_label
+Libya,2.71,69.48,,5810.85,30280.17,0.03,8.88,0.87,Low renewable adoption (mean 8.8%)
+South Sudan,28.18,5.89,0.0,,691.24,1.08,,0.82,High renewable adoption (mean 62.6%)
+Guinea-Bissau,86.59,28.35,1.1,735.95,748.34,0.0,8.94,0.77,High renewable adoption (mean 62.6%)
+Benin,45.31,38.52,4.14,1195.25,2535.76,1.87,6.02,0.75,High renewable adoption (mean 62.6%)
+Mongolia,3.29,95.16,48.68,3993.63,21575.65,7.29,6.42,0.75,Low renewable adoption (mean 8.8%)
+Yemen,3.0,71.31,61.37,,1292.03,10.46,,0.74,Low renewable adoption (mean 8.8%)
+Liberia,85.43,23.08,0.4,695.51,1089.69,11.91,13.88,0.73,High renewable adoption (mean 62.6%)
+Kiribati,42.42,89.82,8.18,1641.71,2531.09,0.0,5.84,0.72,High renewable adoption (mean 62.6%)
+Turkmenistan,0.06,99.98,99.9,6888.55,59243.41,0.0,13.84,0.72,Low renewable adoption (mean 8.8%)
+South Africa,10.42,84.48,85.68,6346.73,25218.45,10.41,7.88,0.7,Low renewable adoption (mean 8.8%)

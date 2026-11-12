@@ -1,0 +1,21 @@
+{
+  "rows": 3649,
+  "countries": 176,
+  "features": [
+    "electricity_access",
+    "clean_cooking_access",
+    "elec_fossil_twh",
+    "elec_nuclear_twh",
+    "energy_per_capita_kwh",
+    "energy_intensity",
+    "co2_kt",
+    "gdp_growth",
+    "gdp_per_capita",
+    "density",
+    "land_area_km2",
+    "latitude",
+    "longitude"
+  ],
+  "final_model": "Logistic Regression",
+  "seconds": 151.3
+}

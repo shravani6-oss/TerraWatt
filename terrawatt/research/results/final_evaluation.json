@@ -1,0 +1,113 @@
+{
+  "final_model": "Logistic Regression",
+  "cv_f1": {
+    "Logistic Regression": 0.8686290687914623,
+    "KNN (k=5)": 0.8040048277809687,
+    "Gaussian Naive Bayes": 0.8196496595949295,
+    "Decision Tree": 0.8139435928727752,
+    "Bagging": 0.8385569982290665,
+    "Random Forest": 0.8602078757824406,
+    "Tuned Random Forest": 0.8679433439817886
+  },
+  "test_metrics": {
+    "Accuracy": 0.8383838383838383,
+    "Precision": 1.0,
+    "Recall": 0.6626506024096386,
+    "F1": 0.7971014492753623
+  },
+  "confusion_matrix": [
+    [
+      361,
+      0
+    ],
+    [
+      112,
+      220
+    ]
+  ],
+  "confusion_matrices_all": {
+    "Logistic Regression": [
+      [
+        361,
+        0
+      ],
+      [
+        112,
+        220
+      ]
+    ],
+    "KNN (k=5)": [
+      [
+        303,
+        58
+      ],
+      [
+        62,
+        270
+      ]
+    ],
+    "Gaussian Naive Bayes": [
+      [
+        359,
+        2
+      ],
+      [
+        91,
+        241
+      ]
+    ],
+    "Decision Tree": [
+      [
+        330,
+        31
+      ],
+      [
+        79,
+        253
+      ]
+    ],
+    "Bagging": [
+      [
+        350,
+        11
+      ],
+      [
+        84,
+        248
+      ]
+    ],
+    "Random Forest": [
+      [
+        351,
+        10
+      ],
+      [
+        59,
+        273
+      ]
+    ]
+  },
+  "tuned_rf_test_metrics": {
+    "Accuracy": 0.8831168831168831,
+    "Precision": 0.966542750929368,
+    "Recall": 0.7831325301204819,
+    "F1": 0.8652246256239601
+  },
+  "best_params": {
+    "clf__max_depth": null,
+    "clf__max_features": 0.5,
+    "clf__min_samples_leaf": 2,
+    "clf__n_estimators": 100
+  },
+  "threshold": 23.93,
+  "class_balance_train": {
+    "Low(0)": 1381,
+    "High(1)": 1381,
+    "ratio_majority_to_minority": 1.0
+  },
+  "class_balance_test": {
+    "Low(0)": 361,
+    "High(1)": 332,
+    "ratio_majority_to_minority": 1.0873493975903614
+  }
+}

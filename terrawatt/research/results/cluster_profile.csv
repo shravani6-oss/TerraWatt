@@ -1,0 +1,4 @@
+cluster,renewable_share,electricity_access,clean_cooking_access,gdp_per_capita,energy_per_capita_kwh,low_carbon_elec_pct,energy_intensity,n_countries,label
+0,34.42,97.29,85.62,22519.34,30374.69,72.0,3.91,52,Medium renewable adoption (mean 34.4%)
+1,62.57,50.09,14.9,1321.83,1807.4,41.19,5.71,49,High renewable adoption (mean 62.6%)
+2,8.8,97.54,90.41,20023.38,38091.81,13.48,4.36,74,Low renewable adoption (mean 8.8%)

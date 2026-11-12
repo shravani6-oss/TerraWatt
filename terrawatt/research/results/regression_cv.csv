@@ -1,0 +1,3 @@
+CV,Mean R2,Std R2
+KFold (k=5) - random rows,0.7905,0.0176
+GroupKFold (k=5) - unseen countries,0.7433,0.0901

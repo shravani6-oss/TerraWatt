@@ -1,0 +1,5 @@
+Model,MAE,MSE,RMSE,R2
+Baseline (predict train mean),23.7717,777.1949,27.8782,-0.0023
+Simple Linear Regression,13.9605,363.4218,19.0636,0.5313
+Multiple Linear Regression,10.2713,212.3082,14.5708,0.7262
+Multiple LR + country (one-hot),3.5552,26.5046,5.1483,0.9658

@@ -1,0 +1,70 @@
+=== FIRST 5 ROWS ===
+       country  year  electricity_access  clean_cooking_access  renew_capacity_per_capita  financial_flows_usd  renewable_share  elec_fossil_twh  elec_nuclear_twh  elec_renewable_twh  low_carbon_elec_pct  energy_per_capita_kwh  energy_intensity       co2_kt  renewables_primary_pct  gdp_growth  gdp_per_capita  density  land_area_km2  latitude  longitude
+0  Afghanistan  2000            1.613591                   6.2                       9.22              20000.0            44.99             0.16               0.0                0.31            65.957440              302.59482              1.64   760.000000                     NaN         NaN             NaN     60.0       652230.0  33.93911  67.709953
+1  Afghanistan  2001            4.074574                   7.2                       8.86             130000.0            45.60             0.09               0.0                0.50            84.745766              236.89185              1.74   730.000000                     NaN         NaN             NaN     60.0       652230.0  33.93911  67.709953
+2  Afghanistan  2002            9.409158                   8.2                       8.47            3950000.0            37.83             0.13               0.0                0.56            81.159424              210.86215              1.40  1029.999971                     NaN         NaN      179.426579     60.0       652230.0  33.93911  67.709953
+3  Afghanistan  2003           14.738506                   9.5                       8.09           25970000.0            36.66             0.31               0.0                0.63            67.021280              229.96822              1.40  1220.000029                     NaN    8.832278      190.683814     60.0       652230.0  33.93911  67.709953
+4  Afghanistan  2004           20.064968                  10.9                       7.75                  NaN            44.24             0.33               0.0                0.56            62.921350              204.23125              1.20  1029.999971                     NaN    1.414118      211.382074     60.0       652230.0  33.93911  67.709953
+
+=== LAST 5 ROWS ===
+       country  year  electricity_access  clean_cooking_access  renew_capacity_per_capita  financial_flows_usd  renewable_share  elec_fossil_twh  elec_nuclear_twh  elec_renewable_twh  low_carbon_elec_pct  energy_per_capita_kwh  energy_intensity       co2_kt  renewables_primary_pct  gdp_growth  gdp_per_capita  density  land_area_km2   latitude  longitude
+3644  Zimbabwe  2016           42.561730                  29.8                      62.88              30000.0            81.90             3.50               0.0                3.32            48.680350              3227.6802             10.00  11020.00046                     NaN    0.755869     1464.588957     38.0       390757.0 -19.015438  29.154857
+3645  Zimbabwe  2017           44.178635                  29.8                      62.33            5570000.0            82.46             3.05               0.0                4.30            58.503407              3068.0115              9.51  10340.00015                     NaN    4.709492     1235.189032     38.0       390757.0 -19.015438  29.154857
+3646  Zimbabwe  2018           45.572647                  29.9                      82.53              10000.0            80.23             3.73               0.0                5.46            59.412407              3441.9858              9.83  12380.00011                     NaN    4.824211     1254.642265     38.0       390757.0 -19.015438  29.154857
+3647  Zimbabwe  2019           46.781475                  30.1                      81.40             250000.0            81.50             3.66               0.0                4.58            55.582527              3003.6553             10.47  11760.00023                     NaN   -6.144236     1316.740657     38.0       390757.0 -19.015438  29.154857
+3648  Zimbabwe  2020           52.747670                  30.4                      80.61              30000.0            81.90             3.40               0.0                4.19            55.204216              2680.1318             10.00          NaN                     NaN   -6.248748     1214.509820     38.0       390757.0 -19.015438  29.154857
+
+Shape: (3649, 21)
+Columns: ['country', 'year', 'electricity_access', 'clean_cooking_access', 'renew_capacity_per_capita', 'financial_flows_usd', 'renewable_share', 'elec_fossil_twh', 'elec_nuclear_twh', 'elec_renewable_twh', 'low_carbon_elec_pct', 'energy_per_capita_kwh', 'energy_intensity', 'co2_kt', 'renewables_primary_pct', 'gdp_growth', 'gdp_per_capita', 'density', 'land_area_km2', 'latitude', 'longitude']
+
+=== DATA TYPES ===
+country                          str
+year                           int64
+electricity_access           float64
+clean_cooking_access         float64
+renew_capacity_per_capita    float64
+financial_flows_usd          float64
+renewable_share              float64
+elec_fossil_twh              float64
+elec_nuclear_twh             float64
+elec_renewable_twh           float64
+low_carbon_elec_pct          float64
+energy_per_capita_kwh        float64
+energy_intensity             float64
+co2_kt                       float64
+renewables_primary_pct       float64
+gdp_growth                   float64
+gdp_per_capita               float64
+density                      float64
+land_area_km2                float64
+latitude                     float64
+longitude                    float64
+
+Numerical columns (20): ['year', 'electricity_access', 'clean_cooking_access', 'renew_capacity_per_capita', 'financial_flows_usd', 'renewable_share', 'elec_fossil_twh', 'elec_nuclear_twh', 'elec_renewable_twh', 'low_carbon_elec_pct', 'energy_per_capita_kwh', 'energy_intensity', 'co2_kt', 'renewables_primary_pct', 'gdp_growth', 'gdp_per_capita', 'density', 'land_area_km2', 'latitude', 'longitude']
+Categorical columns (1): ['country']
+
+=== SUMMARY STATISTICS ===
+                            count          mean           std          min            25%           50%           75%           max
+year                       3649.0  2.010038e+03  6.054228e+00  2000.000000    2005.000000  2.010000e+03  2.015000e+03  2.020000e+03
+electricity_access         3639.0  7.893370e+01  3.027554e+01     1.252269      59.800890  9.836157e+01  1.000000e+02  1.000000e+02
+clean_cooking_access       3480.0  6.325529e+01  3.904366e+01     0.000000      23.175000  8.315000e+01  1.000000e+02  1.000000e+02
+renew_capacity_per_capita  2718.0  1.131375e+02  2.441673e+02     0.000000       3.540000  3.291000e+01  1.122100e+02  3.060190e+03
+financial_flows_usd        1560.0  9.422400e+07  2.981544e+08     0.000000  260000.000000  5.665000e+06  5.534750e+07  5.202310e+09
+renewable_share            3455.0  3.263816e+01  2.989490e+01     0.000000       6.515000  2.330000e+01  5.524500e+01  9.604000e+01
+elec_fossil_twh            3628.0  7.036500e+01  3.480519e+02     0.000000       0.290000  2.970000e+00  2.683750e+01  5.184130e+03
+elec_nuclear_twh           3523.0  1.345019e+01  7.300662e+01     0.000000       0.000000  0.000000e+00  0.000000e+00  8.094100e+02
+elec_renewable_twh         3628.0  2.396801e+01  1.044311e+02     0.000000       0.040000  1.470000e+00  9.600000e+00  2.184940e+03
+low_carbon_elec_pct        3607.0  3.680118e+01  3.431488e+01     0.000000       2.877847  2.786507e+01  6.440379e+01  1.000000e+02
+energy_per_capita_kwh      3649.0  2.574398e+04  3.477322e+04     0.000000    3116.737300  1.312057e+04  3.389278e+04  2.625857e+05
+energy_intensity           3442.0  5.307345e+00  3.532020e+00     0.110000       3.170000  4.300000e+00  6.027500e+00  3.257000e+01
+co2_kt                     3221.0  1.598665e+05  7.736611e+05    10.000000    2019.999981  1.050000e+04  6.058000e+04  1.070722e+07
+renewables_primary_pct     1512.0  1.198671e+01  1.499464e+01     0.000000       2.137095  6.290766e+00  1.684164e+01  8.683659e+01
+gdp_growth                 3332.0  3.441610e+00  5.686720e+00   -62.075920       1.383302  3.559855e+00  5.830099e+00  1.231396e+02
+gdp_per_capita             3367.0  1.328377e+04  1.970987e+04   111.927225    1337.813437  4.578633e+03  1.576862e+04  1.235142e+05
+density                    3648.0  2.235732e+02  6.834634e+02     2.000000      34.000000  8.700000e+01  2.190000e+02  8.358000e+03
+land_area_km2              3648.0  6.332135e+05  1.585519e+06    21.000000   25713.000000  1.176000e+05  5.131200e+05  9.984670e+06
+latitude                   3648.0  1.824639e+01  2.415923e+01   -40.900557       3.202778  1.718988e+01  3.896972e+01  6.496305e+01
+longitude                  3648.0  1.482269e+01  6.634815e+01  -175.198242     -11.779889  1.914514e+01  4.619962e+01  1.780650e+02
+
+Years: 2000 - 2020
+Countries: 176

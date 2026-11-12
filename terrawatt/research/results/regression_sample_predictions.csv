@@ -1,0 +1,21 @@
+country,year,actual,predicted
+Afghanistan,2017,19.21,18.66
+Afghanistan,2018,17.96,16.26
+Afghanistan,2019,18.51,16.77
+Algeria,2017,0.14,-2.72
+Algeria,2018,0.19,-3.02
+Algeria,2019,0.16,-3.26
+Angola,2017,56.25,56.1
+Angola,2018,57.36,56.21
+Angola,2019,54.69,55.12
+Antigua and Barbuda,2017,0.6,1.65
+Antigua and Barbuda,2018,0.9,1.7
+Antigua and Barbuda,2019,0.91,1.68
+Argentina,2017,10.37,9.21
+Argentina,2018,10.52,9.35
+Argentina,2019,10.74,10.17
+Armenia,2017,12.56,6.75
+Armenia,2018,11.13,6.27
+Armenia,2019,10.34,5.79
+Aruba,2017,6.7,-11.2
+Aruba,2018,8.02,-10.81

@@ -1,0 +1,6 @@
+{
+  "best_n_by_bic": 3,
+  "ARI_vs_kmeans": 0.29494817469556917,
+  "kmeans_silhouette": 0.29746648077614557,
+  "gmm_silhouette": 0.151
+}
