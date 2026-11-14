@@ -1,0 +1,10 @@
+# Minimum supported versions (declared). The exact versions this release was tested with are in requirements-tested.txt.
+Flask>=3.0,<4
+pandas>=2.0,<4
+numpy>=1.24,<3
+scikit-learn>=1.3,<2
+joblib>=1.3
+PyJWT>=2.8
+pydantic>=2.6,<3
+reportlab>=4.0
+gunicorn>=22

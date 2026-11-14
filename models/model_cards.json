@@ -1,0 +1,753 @@
+{
+ "trained_at": "2026-11-13T05:28:18+00:00",
+ "sklearn": "1.7.2",
+ "python": "3.10.11",
+ "dataset_rows": 5044,
+ "features": [
+  "electricity_access",
+  "clean_cooking_access",
+  "elec_fossil_twh",
+  "elec_nuclear_twh",
+  "energy_per_capita_kwh",
+  "energy_intensity",
+  "co2_kt",
+  "gdp_growth",
+  "gdp_per_capita",
+  "density",
+  "land_area_km2",
+  "latitude",
+  "longitude"
+ ],
+ "target": "renewable_share",
+ "regression": {
+  "chosen": "Ridge + country",
+  "columns": [
+   "electricity_access",
+   "clean_cooking_access",
+   "elec_fossil_twh",
+   "elec_nuclear_twh",
+   "energy_per_capita_kwh",
+   "energy_intensity",
+   "co2_kt",
+   "gdp_growth",
+   "gdp_per_capita",
+   "density",
+   "land_area_km2",
+   "latitude",
+   "longitude",
+   "year",
+   "country"
+  ],
+  "cutoff_year": 2016,
+  "examples": [
+   {
+    "country": "Belgium",
+    "year": 2019,
+    "actual": 10.21,
+    "predicted": 8.523546619709737,
+    "error": -1.6864533802902635
+   },
+   {
+    "country": "Denmark",
+    "year": 2019,
+    "actual": 37.52,
+    "predicted": 30.869685988686612,
+    "error": -6.650314011313391
+   },
+   {
+    "country": "Mexico",
+    "year": 2019,
+    "actual": 10.34,
+    "predicted": 10.75895940926106,
+    "error": 0.4189594092610598
+   },
+   {
+    "country": "Puerto Rico",
+    "year": 2019,
+    "actual": 2.42,
+    "predicted": 5.12560130299353,
+    "error": 2.7056013029935304
+   },
+   {
+    "country": "Serbia",
+    "year": 2019,
+    "actual": 21.53,
+    "predicted": 18.991363796397998,
+    "error": -2.538636203602003
+   },
+   {
+    "country": "Sierra Leone",
+    "year": 2019,
+    "actual": 75.44,
+    "predicted": 79.6817204854948,
+    "error": 4.241720485494795
+   },
+   {
+    "country": "Solomon Islands",
+    "year": 2019,
+    "actual": 48.39,
+    "predicted": 44.27612586580379,
+    "error": -4.113874134196209
+   },
+   {
+    "country": "Thailand",
+    "year": 2019,
+    "actual": 23.96,
+    "predicted": 19.222497672595587,
+    "error": -4.737502327404414
+   }
+  ],
+  "target_years": [
+   2000,
+   2020
+  ],
+  "n_countries": 174,
+  "n_train": 2931,
+  "n_test": 523,
+  "table": [
+   {
+    "model": "Baseline (train mean)",
+    "MAE": 23.772461320374997,
+    "RMSE": 27.87836294805894,
+    "R2": -0.0023240429786317574,
+    "inner_val_rmse": 28.556393247604493,
+    "selected": false
+   },
+   {
+    "model": "Ridge",
+    "MAE": 9.991648878062025,
+    "RMSE": 14.101638694349946,
+    "R2": 0.7435440505136303,
+    "inner_val_rmse": 13.949130654221502,
+    "selected": false
+   },
+   {
+    "model": "Ridge + country",
+    "MAE": 3.5179890293211327,
+    "RMSE": 4.566688457917407,
+    "R2": 0.9731047006842205,
+    "inner_val_rmse": 4.574074705009552,
+    "selected": true
+   },
+   {
+    "model": "Gradient boosting",
+    "MAE": 3.4637933167996495,
+    "RMSE": 5.48457277138521,
+    "R2": 0.9612064772422283,
+    "inner_val_rmse": 5.469681159856805,
+    "selected": false
+   }
+  ],
+  "importance": [
+   {
+    "feature": "land_area_km2",
+    "label": "Land area (km\u00b2)",
+    "importance": 38.47610872740934
+   },
+   {
+    "feature": "co2_kt",
+    "label": "CO\u2082 emissions (kt)",
+    "importance": 21.48175002475353
+   },
+   {
+    "feature": "density",
+    "label": "Population density (/km\u00b2)",
+    "importance": 13.632042194896332
+   },
+   {
+    "feature": "elec_fossil_twh",
+    "label": "Fossil electricity (TWh)",
+    "importance": 9.032198600185394
+   },
+   {
+    "feature": "clean_cooking_access",
+    "label": "Clean cooking access (%)",
+    "importance": 6.119385709501324
+   },
+   {
+    "feature": "gdp_per_capita",
+    "label": "GDP per capita (US$)",
+    "importance": 1.1262974334979088
+   },
+   {
+    "feature": "energy_intensity",
+    "label": "Energy intensity (MJ/$ PPP)",
+    "importance": 0.5802232496901192
+   },
+   {
+    "feature": "energy_per_capita_kwh",
+    "label": "Energy per person (kWh)",
+    "importance": 0.3398537070016857
+   },
+   {
+    "feature": "latitude",
+    "label": "Latitude",
+    "importance": 0.2967638199563485
+   },
+   {
+    "feature": "electricity_access",
+    "label": "Access to electricity (%)",
+    "importance": 0.16789450930443478
+   }
+  ]
+ },
+ "classification": {
+  "chosen": "Logistic regression",
+  "examples": [
+   {
+    "country": "Dominican Republic",
+    "year": 2019,
+    "actual_share": 13.98,
+    "actual_label": 0,
+    "p_high": 0.23811434764843398,
+    "predicted_label": 0
+   },
+   {
+    "country": "Estonia",
+    "year": 2019,
+    "actual_share": 31.29,
+    "actual_label": 1,
+    "p_high": 0.09694570164432342,
+    "predicted_label": 0
+   },
+   {
+    "country": "France",
+    "year": 2019,
+    "actual_share": 15.53,
+    "actual_label": 0,
+    "p_high": 0.45546474039105345,
+    "predicted_label": 0
+   },
+   {
+    "country": "Jamaica",
+    "year": 2019,
+    "actual_share": 9.09,
+    "actual_label": 0,
+    "p_high": 0.26441033660105173,
+    "predicted_label": 0
+   },
+   {
+    "country": "Nepal",
+    "year": 2019,
+    "actual_share": 77.39,
+    "actual_label": 1,
+    "p_high": 0.9898381057248611,
+    "predicted_label": 1
+   },
+   {
+    "country": "Norway",
+    "year": 2019,
+    "actual_share": 62.37,
+    "actual_label": 1,
+    "p_high": 0.6590492593418926,
+    "predicted_label": 1
+   },
+   {
+    "country": "Puerto Rico",
+    "year": 2019,
+    "actual_share": 2.42,
+    "actual_label": 0,
+    "p_high": 0.3302478664014756,
+    "predicted_label": 0
+   },
+   {
+    "country": "Serbia",
+    "year": 2019,
+    "actual_share": 21.53,
+    "actual_label": 0,
+    "p_high": 0.1114854907597462,
+    "predicted_label": 0
+   }
+  ],
+  "threshold_eval": 22.14,
+  "threshold_final": 23.275,
+  "table": [
+   {
+    "model": "Logistic regression",
+    "cv_f1": 0.8688809528377911,
+    "accuracy": 0.8686868686868687,
+    "precision": 0.9966442953020134,
+    "recall": 0.7674418604651163,
+    "f1": 0.8671532846715329,
+    "roc_auc": 0.9156153417439327,
+    "confusion": [
+     [
+      305,
+      1
+     ],
+     [
+      90,
+      297
+     ]
+    ],
+    "selected": true
+   },
+   {
+    "model": "Random forest",
+    "cv_f1": 0.8568866031901223,
+    "accuracy": 0.8903318903318903,
+    "precision": 0.9481268011527377,
+    "recall": 0.8501291989664083,
+    "f1": 0.896457765667575,
+    "roc_auc": 0.9113002651534343,
+    "confusion": [
+     [
+      288,
+      18
+     ],
+     [
+      58,
+      329
+     ]
+    ],
+    "selected": false
+   },
+   {
+    "model": "Gradient boosting",
+    "cv_f1": 0.8574071881775425,
+    "accuracy": 0.8917748917748918,
+    "precision": 0.9615384615384616,
+    "recall": 0.8397932816537468,
+    "f1": 0.896551724137931,
+    "roc_auc": 0.8920428636570908,
+    "confusion": [
+     [
+      293,
+      13
+     ],
+     [
+      62,
+      325
+     ]
+    ],
+    "selected": false
+   }
+  ],
+  "n_train": 2761,
+  "n_test": 693,
+  "n_test_countries": 35,
+  "importance": [
+   {
+    "feature": "co2_kt",
+    "label": "CO\u2082 emissions (kt)",
+    "importance": 0.23827801690981695
+   },
+   {
+    "feature": "land_area_km2",
+    "label": "Land area (km\u00b2)",
+    "importance": 0.20776732124374303
+   },
+   {
+    "feature": "elec_fossil_twh",
+    "label": "Fossil electricity (TWh)",
+    "importance": 0.1486075729846998
+   },
+   {
+    "feature": "clean_cooking_access",
+    "label": "Clean cooking access (%)",
+    "importance": 0.14702455864756742
+   },
+   {
+    "feature": "gdp_per_capita",
+    "label": "GDP per capita (US$)",
+    "importance": 0.07465748803621988
+   },
+   {
+    "feature": "electricity_access",
+    "label": "Access to electricity (%)",
+    "importance": 0.021870870213309003
+   },
+   {
+    "feature": "longitude",
+    "label": "Longitude",
+    "importance": 0.013806793479501334
+   },
+   {
+    "feature": "energy_intensity",
+    "label": "Energy intensity (MJ/$ PPP)",
+    "importance": 0.008011977411811411
+   },
+   {
+    "feature": "density",
+    "label": "Population density (/km\u00b2)",
+    "importance": 0.005059692020688655
+   },
+   {
+    "feature": "elec_nuclear_twh",
+    "label": "Nuclear electricity (TWh)",
+    "importance": 0.004602316569977472
+   }
+  ]
+ },
+ "clustering": {
+  "k": 4,
+  "silhouette": {
+   "2": 0.3876314911614741,
+   "3": 0.2997605181529477,
+   "4": 0.31789994621139184,
+   "5": 0.3038968073251185,
+   "6": 0.2917252588738407,
+   "7": 0.28484742075693287,
+   "8": 0.22495376544737683
+  },
+  "silhouette_chosen": 0.31789994621139184,
+  "features": [
+   "renewable_share",
+   "renewable_elec_share",
+   "electricity_access",
+   "clean_cooking_access",
+   "gdp_per_capita",
+   "energy_per_capita_kwh",
+   "low_carbon_elec_pct",
+   "energy_intensity",
+   "co2_per_capita_t"
+  ],
+  "profiles": [
+   {
+    "cluster": 0,
+    "label": "Medium renewable share",
+    "n": 37,
+    "means": {
+     "renewable_share": 43.35738888888889,
+     "renewable_elec_share": 75.04334054054054,
+     "electricity_access": 95.35178372972973,
+     "clean_cooking_access": 78.39729729729729,
+     "gdp_per_capita": 18422.092821516664,
+     "energy_per_capita_kwh": 25819.289746972972,
+     "low_carbon_elec_pct": 78.05482162162163,
+     "energy_intensity": 3.947351351351351,
+     "co2_per_capita_t": 3.0081405405405404
+    },
+    "examples": [
+     "Gabon",
+     "Bhutan",
+     "Iceland",
+     "Nepal",
+     "Eswatini"
+    ]
+   },
+   {
+    "cluster": 1,
+    "label": "Low renewable share (A)",
+    "n": 75,
+    "means": {
+     "renewable_share": 11.271093333333333,
+     "renewable_elec_share": 15.567365333333333,
+     "electricity_access": 97.72319082133333,
+     "clean_cooking_access": 89.11927536231885,
+     "gdp_per_capita": 18278.35275043433,
+     "energy_per_capita_kwh": 26719.9385864,
+     "low_carbon_elec_pct": 22.346810666666666,
+     "energy_intensity": 3.613524746666667,
+     "co2_per_capita_t": 4.946145205479452
+    },
+    "examples": [
+     "Samoa",
+     "India",
+     "Philippines",
+     "Bosnia and Herzegovina",
+     "Portugal"
+    ]
+   },
+   {
+    "cluster": 2,
+    "label": "High renewable share",
+    "n": 47,
+    "means": {
+     "renewable_share": 63.49221276595745,
+     "renewable_elec_share": 38.26450434782609,
+     "electricity_access": 46.20273344680851,
+     "clean_cooking_access": 13.705744680851064,
+     "gdp_per_capita": 1329.5725823681819,
+     "energy_per_capita_kwh": 1840.7797746382978,
+     "low_carbon_elec_pct": 38.388017391304345,
+     "energy_intensity": 5.682150425531915,
+     "co2_per_capita_t": 0.40031914893617015
+    },
+    "examples": [
+     "Somalia",
+     "Central African Republic",
+     "Uganda",
+     "Ethiopia",
+     "Burundi"
+    ]
+   },
+   {
+    "cluster": 3,
+    "label": "Low renewable share",
+    "n": 16,
+    "means": {
+     "renewable_share": 5.91725,
+     "renewable_elec_share": 12.5885125,
+     "electricity_access": 98.135726375,
+     "clean_cooking_access": 99.49571428571429,
+     "gdp_per_capita": 34978.1956806125,
+     "energy_per_capita_kwh": 93950.8630625,
+     "low_carbon_elec_pct": 14.75905,
+     "energy_intensity": 7.5625333333333336,
+     "co2_per_capita_t": 18.7489375
+    },
+    "examples": [
+     "Estonia",
+     "Canada",
+     "Luxembourg",
+     "United States",
+     "Australia"
+    ]
+   }
+  ],
+  "window_years": [
+   2015,
+   2019
+  ]
+ },
+ "gmm": {
+  "k": 6,
+  "bic": {
+   "2": 3404.570151369157,
+   "3": 3060.961178507771,
+   "4": 2746.2457973991823,
+   "5": 2635.8112704961045,
+   "6": 2494.255240681139,
+   "7": 2360.5248549815424
+  },
+  "aic": {
+   "2": 3287.473070333987,
+   "3": 2883.733163968054,
+   "4": 2508.886849354919,
+   "5": 2338.321388947294,
+   "6": 2136.6344256277825,
+   "7": 1942.7731064236384
+  },
+  "covariance_type": "diag",
+  "profiles": [
+   {
+    "component": 0,
+    "label": "Component 6 (renewable share rank 6/6)",
+    "n": 19,
+    "weight": 0.10908771246545892,
+    "means": {
+     "renewable_share": 77.11694736842105,
+     "renewable_elec_share": 75.59813684210526,
+     "electricity_access": 38.970271652631574,
+     "clean_cooking_access": 12.631052631578946,
+     "gdp_per_capita": 888.847578536842,
+     "energy_per_capita_kwh": 1517.181163368421,
+     "low_carbon_elec_pct": 75.59813684210526,
+     "energy_intensity": 6.76421052631579,
+     "co2_per_capita_t": 0.27263157894736845
+    },
+    "examples": [
+     "Central African Republic",
+     "Uganda",
+     "Ethiopia",
+     "Burundi",
+     "Rwanda"
+    ]
+   },
+   {
+    "component": 1,
+    "label": "Component 1 (renewable share rank 1/6)",
+    "n": 22,
+    "weight": 0.12480616465186058,
+    "means": {
+     "renewable_share": 1.6481818181818182,
+     "renewable_elec_share": 2.1777181818181823,
+     "electricity_access": 97.93335681818184,
+     "clean_cooking_access": 98.70235294117647,
+     "gdp_per_capita": 31395.480981571432,
+     "energy_per_capita_kwh": 73916.84538181819,
+     "low_carbon_elec_pct": 2.4155000000000006,
+     "energy_intensity": 5.952761904761906,
+     "co2_per_capita_t": 14.248740000000002
+    },
+    "examples": [
+     "South Africa",
+     "New Caledonia",
+     "Barbados",
+     "Israel",
+     "Libya"
+    ]
+   },
+   {
+    "component": 2,
+    "label": "Component 4 (renewable share rank 4/6)",
+    "n": 34,
+    "weight": 0.19718194247716395,
+    "means": {
+     "renewable_share": 40.92006060606061,
+     "renewable_elec_share": 62.829170588235286,
+     "electricity_access": 87.50912891176469,
+     "clean_cooking_access": 60.59735294117647,
+     "gdp_per_capita": 5018.0265693875,
+     "energy_per_capita_kwh": 10233.34475111765,
+     "low_carbon_elec_pct": 63.15274705882352,
+     "energy_intensity": 3.832411764705883,
+     "co2_per_capita_t": 1.6140823529411763
+    },
+    "examples": [
+     "Gabon",
+     "Bhutan",
+     "Congo",
+     "Eswatini",
+     "Guatemala"
+    ]
+   },
+   {
+    "component": 3,
+    "label": "Component 5 (renewable share rank 5/6)",
+    "n": 25,
+    "weight": 0.14051870278889123,
+    "means": {
+     "renewable_share": 53.41,
+     "renewable_elec_share": 8.585175000000001,
+     "electricity_access": 50.839594592,
+     "clean_cooking_access": 13.0576,
+     "gdp_per_capita": 1555.9901900909092,
+     "energy_per_capita_kwh": 1691.68027376,
+     "low_carbon_elec_pct": 8.585175000000001,
+     "energy_intensity": 5.02413704,
+     "co2_per_capita_t": 0.417744
+    },
+    "examples": [
+     "Somalia",
+     "Guinea-Bissau",
+     "Liberia",
+     "Nigeria",
+     "Niger"
+    ]
+   },
+   {
+    "component": 4,
+    "label": "Component 3 (renewable share rank 3/6)",
+    "n": 36,
+    "weight": 0.20987975175045367,
+    "means": {
+     "renewable_share": 24.444222222222223,
+     "renewable_elec_share": 42.26023333333333,
+     "electricity_access": 99.99069066666667,
+     "clean_cooking_access": 100.0,
+     "gdp_per_capita": 40540.73160205883,
+     "energy_per_capita_kwh": 50164.14126666667,
+     "low_carbon_elec_pct": 56.04162777777778,
+     "energy_intensity": 3.690166666666667,
+     "co2_per_capita_t": 7.688116666666667
+    },
+    "examples": [
+     "Iceland",
+     "Uruguay",
+     "Norway",
+     "Sweden",
+     "Finland"
+    ]
+   },
+   {
+    "component": 5,
+    "label": "Component 2 (renewable share rank 2/6)",
+    "n": 39,
+    "weight": 0.21852572586617158,
+    "means": {
+     "renewable_share": 10.715948717948717,
+     "renewable_elec_share": 14.30411794871795,
+     "electricity_access": 98.92362257435899,
+     "clean_cooking_access": 88.39888888888889,
+     "gdp_per_capita": 7331.731054002857,
+     "energy_per_capita_kwh": 17895.069706153845,
+     "low_carbon_elec_pct": 18.09720512820513,
+     "energy_intensity": 3.981692307692308,
+     "co2_per_capita_t": 4.07483076923077
+    },
+    "examples": [
+     "Bosnia and Herzegovina",
+     "Indonesia",
+     "Romania",
+     "Thailand",
+     "Cuba"
+    ]
+   }
+  ],
+  "agreement_with_kmeans_ari": 0.3597682908401608,
+  "n_uncertain_lt_70pct": 3,
+  "bic_at_upper_bound": true,
+  "n": 175
+ },
+ "env": {
+  "sklearn": "1.7.2",
+  "numpy": "1.26.2",
+  "pandas": "2.2.1",
+  "python": "3.10.11"
+ },
+ "data_window": {
+  "target_years": [
+   2000,
+   2020
+  ]
+ },
+ "scenario_ranges": {
+  "electricity_access": {
+   "p1": 4.8,
+   "p99": 100.0,
+   "median": 98.36157
+  },
+  "clean_cooking_access": {
+   "p1": 0.3,
+   "p99": 100.0,
+   "median": 83.15
+  },
+  "elec_fossil_twh": {
+   "p1": 0.0,
+   "p99": 1579.0114000000003,
+   "median": 3.72
+  },
+  "elec_nuclear_twh": {
+   "p1": 0.0,
+   "p99": 403.6729999999986,
+   "median": 0.0
+  },
+  "energy_per_capita_kwh": {
+   "p1": 168.5895559,
+   "p99": 165679.15039999993,
+   "median": 13118.841
+  },
+  "energy_intensity": {
+   "p1": 1.37,
+   "p99": 20.567700000000002,
+   "median": 4.3
+  },
+  "co2_kt": {
+   "p1": 51.0,
+   "p99": 3773411.050000055,
+   "median": 11039.5
+  },
+  "gdp_growth": {
+   "p1": -11.710392649999998,
+   "p99": 16.86804685000001,
+   "median": 3.5598549999999998
+  },
+  "gdp_per_capita": {
+   "p1": 211.88036277999998,
+   "p99": 92694.57612520056,
+   "median": 4578.633208
+  },
+  "density": {
+   "p1": 3.0,
+   "p99": 2239.0,
+   "median": 87.0
+  },
+  "land_area_km2": {
+   "p1": 26.0,
+   "p99": 9833517.0,
+   "median": 117600.0
+  },
+  "latitude": {
+   "p1": -38.416097,
+   "p99": 61.92411,
+   "median": 17.1253465
+  },
+  "longitude": {
+   "p1": -172.104629,
+   "p99": 177.64933,
+   "median": 21.375567
+  }
+ }
+}

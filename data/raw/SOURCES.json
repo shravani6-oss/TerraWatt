@@ -1,0 +1,22 @@
+{
+ "note": "Trimmed to the columns/countries/years used by backend/app/dataset/build.py. Rebuild: python -m backend.manage build-data --owid-energy <file> --owid-co2 <file>",
+ "owid_energy": {
+  "repo": "https://github.com/owid/energy-data",
+  "commit": "f8de88a4f6f9cab44f1cf606047cbd6c4414042c",
+  "file": "owid-energy-data.csv",
+  "upstream": "Ember Yearly Electricity Data; Energy Institute Statistical Review of World Energy"
+ },
+ "owid_co2": {
+  "repo": "https://github.com/owid/co2-data",
+  "commit": "22d9a01321ddec951b36f2bfc66e05dc6ad50ad8",
+  "file": "owid-co2-data.csv",
+  "upstream": "Global Carbon Project"
+ },
+ "kaggle_world_bank": {
+  "url": "https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy",
+  "file": "../global-data-on-sustainable-energy.csv",
+  "years": "2000-2020",
+  "upstream": "World Bank, IEA"
+ },
+ "license": "OWID data: CC BY 4.0 (cite original producers)."
+}

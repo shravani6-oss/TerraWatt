@@ -1,0 +1,68 @@
+{
+ "built_at": "2026-11-11T07:20:47+00:00",
+ "errors": [],
+ "warnings": [
+  "elec_fossil_twh: only 48% of overlapping rows agree within 5% (OWID values are used)",
+  "co2_kt: only 45% of overlapping rows agree within 5% (OWID values are used)"
+ ],
+ "checks": {
+  "renewable_components_sum_to_total_max_abs_diff_twh": 4.547473508864641e-13,
+  "fossil+nuclear+renewable_vs_total_share_of_rows_off_by_over_2pct": 0.0,
+  "kaggle_vs_owid_overlap": {
+   "elec_renewable_twh": {
+    "overlap_rows": 2197,
+    "median_rel_diff": 0.004901960784313838,
+    "share_rows_within_5pct": 0.8315885298133819
+   },
+   "elec_fossil_twh": {
+    "overlap_rows": 2526,
+    "median_rel_diff": 0.05494505494505495,
+    "share_rows_within_5pct": 0.4806017418844022
+   },
+   "elec_nuclear_twh": {
+    "overlap_rows": 576,
+    "median_rel_diff": 0.0,
+    "share_rows_within_5pct": 0.8784722222222222
+   },
+   "co2_kt": {
+    "overlap_rows": 3204,
+    "median_rel_diff": 0.05638410868661871,
+    "share_rows_within_5pct": 0.4534956304619226
+   }
+  },
+  "world_2023_generation_twh_covered_countries": 29504.090000000004,
+  "world_2023_renewable_share_pct": 30.399615782083096,
+  "world_2023_co2_gt_covered_countries": 36.999765,
+  "rows": 5044,
+  "countries": 194,
+  "years": [
+   2000,
+   2025
+  ]
+ },
+ "excluded_entities": {
+  "French Guiana": "single 2000 row, no coordinates, no indicators (overseas department of France)"
+ },
+ "added_countries": [
+  "Bolivia",
+  "Brunei",
+  "Cape Verde",
+  "Cote d'Ivoire",
+  "Democratic Republic of Congo",
+  "East Timor",
+  "Iran",
+  "Laos",
+  "Micronesia (country)",
+  "Moldova",
+  "North Korea",
+  "Palestine",
+  "Russia",
+  "South Korea",
+  "Syria",
+  "Taiwan",
+  "Tanzania",
+  "Venezuela",
+  "Vietnam"
+ ],
+ "ok": true
+}

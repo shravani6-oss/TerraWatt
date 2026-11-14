@@ -1,0 +1,24 @@
+{
+  "note": "Only official 2030 targets that were checked against a primary government source and that map onto a TerraWatt indicator. Targets stated on a different basis are labelled 'approximate'. Add an entry only after verifying the wording at the source.",
+  "verified_on": "2026-11-12",
+  "targets": [
+    {"country": "Spain", "metric": "renewable_elec_share", "year": 2030, "value": 81, "unit": "%",
+     "wording": "81 % de energía renovable en la generación eléctrica",
+     "basis": "share of electricity GENERATION", "comparability": "like-for-like",
+     "comparability_note": "Same basis as the Ember series (renewables ÷ total generation).",
+     "policy": "Updated National Integrated Energy and Climate Plan (PNIEC) 2023-2030",
+     "source": "https://www.miteco.gob.es/es/ministerio/planes-estrategias/plan-nacional-integrado-energia-clima/default.aspx"},
+    {"country": "Germany", "metric": "renewable_elec_share", "year": 2030, "value": 80, "unit": "%",
+     "wording": "increase the share of gross electricity consumption that is covered by renewables to at least 80 percent by 2030",
+     "basis": "share of gross electricity CONSUMPTION", "comparability": "approximate",
+     "comparability_note": "The target is on consumption (includes net imports); TerraWatt shows share of generation. Treat the gap as indicative.",
+     "policy": "Renewable Energy Sources Act (EEG 2023)",
+     "source": "https://www.bundesregierung.de/breg-en/news/amendment-of-the-renewables-act-2060448"},
+    {"country": "Ireland", "metric": "renewable_elec_share", "year": 2030, "value": 80, "unit": "%",
+     "wording": "achieve 80% of electricity demand being met by renewable sources by 2030",
+     "basis": "share of electricity DEMAND", "comparability": "approximate",
+     "comparability_note": "The target is on demand (includes imports); TerraWatt shows share of generation. Treat the gap as indicative.",
+     "policy": "Climate Action Plan 2025 (Government of Ireland)",
+     "source": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/press-releases/government-approves-climate-action-plan-2025"}
+  ]
+}
